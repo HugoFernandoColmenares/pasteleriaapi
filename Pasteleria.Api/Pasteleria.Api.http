@@ -1,0 +1,6 @@
+@Pasteleria_HostAddress = http://localhost:5003
+
+GET {{Pasteleria_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

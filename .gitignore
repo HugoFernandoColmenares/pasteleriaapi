@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nupkg
+*.snupkg
+*.lock
+*.v2
+project.lock.json
+
+# Visual Studio Code
+.vscode/
+
+# SQLite Database
+*.db
+*.db-shm
+*.db-wal
+
+# API Documentation and Test Data
+API_INSTRUCTIONS.md
+test-data.json

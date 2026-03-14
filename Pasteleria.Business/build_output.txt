@@ -1,0 +1,27 @@
+  Determinando los proyectos que se van a restaurar...
+  Todos los proyectos est+ín actualizados para la restauraci+¦n.
+  Pasteleria.Shared -> D:\Recursos\NetCore\pasteleriaapi\BaseApi.Shared\bin\Debug\net8.0\Pasteleria.Shared.dll
+  Pasteleria.Data -> D:\Recursos\NetCore\pasteleriaapi\BaseApi.Data\bin\Debug\net8.0\Pasteleria.Data.dll
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\AuthRepository.cs(18,20): warning CS8603: Posible tipo de valor devuelto de referencia nulo. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\AuthRepository.cs(23,20): warning CS8603: Posible tipo de valor devuelto de referencia nulo. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\DoI\DependencyInjection.cs(26,28): error CS0246: El nombre del tipo o del espacio de nombres 'IIngredientService' no se encontr+¦ (-+falta una directiva using o una referencia de ensamblado?) [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\DoI\DependencyInjection.cs(26,48): error CS0246: El nombre del tipo o del espacio de nombres 'IngredientService' no se encontr+¦ (-+falta una directiva using o una referencia de ensamblado?) [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Auxiliar\AuthenticationAndEmailServices.cs(30,47): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "s" en "byte[] Encoding.GetBytes(string s)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\RecipeRepository.cs(78,36): warning CS1998: El m+®todo asincr+¦nico carece de operadores "await" y se ejecutar+í de forma sincr+¦nica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Services\AuthService.cs(172,56): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "value" en "Claim.Claim(string type, string value)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Services\AuthService.cs(182,71): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "s" en "byte[] Encoding.GetBytes(string s)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+
+ERROR al compilar.
+
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\AuthRepository.cs(18,20): warning CS8603: Posible tipo de valor devuelto de referencia nulo. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\AuthRepository.cs(23,20): warning CS8603: Posible tipo de valor devuelto de referencia nulo. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Auxiliar\AuthenticationAndEmailServices.cs(30,47): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "s" en "byte[] Encoding.GetBytes(string s)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Repositories\RecipeRepository.cs(78,36): warning CS1998: El m+®todo asincr+¦nico carece de operadores "await" y se ejecutar+í de forma sincr+¦nica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano. [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Services\AuthService.cs(172,56): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "value" en "Claim.Claim(string type, string value)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Services\AuthService.cs(182,71): warning CS8604: Posible argumento de referencia nulo para el par+ímetro "s" en "byte[] Encoding.GetBytes(string s)". [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\DoI\DependencyInjection.cs(26,28): error CS0246: El nombre del tipo o del espacio de nombres 'IIngredientService' no se encontr+¦ (-+falta una directiva using o una referencia de ensamblado?) [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\DoI\DependencyInjection.cs(26,48): error CS0246: El nombre del tipo o del espacio de nombres 'IngredientService' no se encontr+¦ (-+falta una directiva using o una referencia de ensamblado?) [D:\Recursos\NetCore\pasteleriaapi\BaseApi.Business\Pasteleria.Business.csproj]
+    6 Advertencia(s)
+    2 Errores
+
+Tiempo transcurrido 00:00:01.66

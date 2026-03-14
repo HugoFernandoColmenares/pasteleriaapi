@@ -1,0 +1,30 @@
+services:
+  pasteleria-db:
+    image: mysql:8.0
+    container_name: pasteleria-db
+    environment:
+      MYSQL_ROOT_PASSWORD: BioUser.01
+      MYSQL_DATABASE: pasteleria
+      MYSQL_USER: biouser
+      MYSQL_PASSWORD: BioUser.01
+    ports:
+      - "3312:3312"
+    volumes:
+      - pasteleria-db-data:/var/lib/mysql
+
+  pasteleria-app:
+    image: pasteleria-app
+    container_name: pasteleria-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=pasteleria-db;Port=3306;Database=pasteleria;User=biouser;Password=BioUser.01;
+    ports:
+      - "5000:5000"
+    depends_on:
+      - pasteleria-db
+
+volumes:
+  pasteleria-db-data:
+  
