@@ -21,13 +21,15 @@ public static class DependencyInjection
         services.AddScoped<IInventoryItemRepository, InventoryItemRepository>();
         services.AddScoped<IRecipeIngredientRepository, RecipeIngredientRepository>();
         services.AddScoped<IRecipeRepository, RecipeRepository >();
+        services.AddScoped<INewsArticleRepository, NewsArticleRepository>();
 
-        // Configuración de servicios
+        // ConfiguraciÃ³n de servicios
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IDocumentService, DocumentService>();
         services.AddScoped<IIngredientService, IngredientService>();
         services.AddScoped<IInventoryItemService, InventoryItemService>();
         services.AddScoped<IRecipeService, RecipeService>();
         services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
-    }
-}
+        services.AddScoped<INewsArticleService, NewsArticleService>();
+        }
+        }

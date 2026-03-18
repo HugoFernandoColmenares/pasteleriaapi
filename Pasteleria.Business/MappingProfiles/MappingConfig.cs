@@ -45,6 +45,12 @@ namespace Pasteleria.Business.MappingProfiles
             CreateMap<ListRecipeIngredientDto, RecipeIngredient>()
                 .ReverseMap()
                 .ForMember(dest => dest.IngredientName, opt => opt.MapFrom(src => src.Ingredient != null ? src.Ingredient.Name : string.Empty));
+
+            // NewsArticles
+            CreateMap<NewsArticleDto, NewsArticle>().ReverseMap();
+            CreateMap<CreateNewsArticleDto, NewsArticle>().ReverseMap();
+            CreateMap<ListNewsArticleDto, NewsArticle>().ReverseMap();
+            CreateMap<UpdateNewsArticleDto, NewsArticle>().ReverseMap();
         }
     }
 }

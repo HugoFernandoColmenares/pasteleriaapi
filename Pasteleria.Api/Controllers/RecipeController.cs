@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Pasteleria.Business.Interfaces.Services;
 using Pasteleria.Shared.DTOs;
 using Pasteleria.Shared.Extensions;
-using Pasteleria.Shared.Extensions;
 using System.Net;
 
 namespace Pasteleria.Api.Controllers
