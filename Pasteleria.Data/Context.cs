@@ -20,6 +20,7 @@ namespace Pasteleria.Data
             modelBuilder.Entity<Document>().HasQueryFilter(e => !e.IsDeleted);
             modelBuilder.Entity<RecipeIngredient>().HasQueryFilter(e => !e.IsDeleted);
             modelBuilder.Entity<NewsArticle>().HasQueryFilter(e => !e.IsDeleted);
+            modelBuilder.Entity<StorageLocation>().HasQueryFilter(e => !e.IsDeleted);
 
             // Seed Roles
             modelBuilder.Entity<IdentityRole>().HasData(
@@ -35,5 +36,6 @@ namespace Pasteleria.Data
         public DbSet<Document> Documents { get; set; }
         public DbSet<RecipeIngredient> RecipeIngredients { get; set; }
         public DbSet<NewsArticle> NewsArticles { get; set; }
+        public DbSet<StorageLocation> StorageLocations { get; set; }
     }
 }

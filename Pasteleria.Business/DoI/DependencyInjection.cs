@@ -22,6 +22,7 @@ public static class DependencyInjection
         services.AddScoped<IRecipeIngredientRepository, RecipeIngredientRepository>();
         services.AddScoped<IRecipeRepository, RecipeRepository >();
         services.AddScoped<INewsArticleRepository, NewsArticleRepository>();
+        services.AddScoped<IStorageLocationRepository, StorageLocationRepository>();
 
         // ConfiguraciÃ³n de servicios
         services.AddScoped<IAuthService, AuthService>();
@@ -31,5 +32,6 @@ public static class DependencyInjection
         services.AddScoped<IRecipeService, RecipeService>();
         services.AddScoped<IRecipeIngredientService, RecipeIngredientService>();
         services.AddScoped<INewsArticleService, NewsArticleService>();
-        }
-        }
+        services.AddScoped<IStorageLocationService, StorageLocationService>();
+    }
+}

@@ -51,6 +51,10 @@ namespace Pasteleria.Business.MappingProfiles
             CreateMap<CreateNewsArticleDto, NewsArticle>().ReverseMap();
             CreateMap<ListNewsArticleDto, NewsArticle>().ReverseMap();
             CreateMap<UpdateNewsArticleDto, NewsArticle>().ReverseMap();
+
+            // StorageLocation
+            CreateMap<StorageLocationDto, StorageLocation>().ReverseMap();
+            CreateMap<CreateStorageLocationDto, StorageLocation>().ReverseMap();
         }
     }
 }
