@@ -1,65 +1,65 @@
 # PasteleriaApp API 🧁 (Backend Refactored)
 
-¡Bienvenido/a a la API de **PasteleriaApp**! Este es un backend robusto desarrollado por **Feith Noir** y optimizado para una gestión eficiente de una pastelería moderna.
+Welcome to the **PasteleriaApp** API! This is a robust backend developed by **Feith Noir** and optimized for efficient management of a modern bakery.
 
-## ✨ Propósito del Proyecto
+## ✨ Project Purpose
 
-Este backend proporciona una base sólida, escalable y profesional para gestionar:
+This backend provides a solid, scalable, and professional foundation to manage:
 
-*   **Ingredientes:** Base de datos centralizada de materias primas con costos y proveedores.
-*   **Inventario:** Control de stock en tiempo real con alertas de niveles bajos.
-*   **Recetas:** Definición detallada de recetas con cálculo automático de costos.
-*   **Documentación:** Registro y gestión de documentos importantes del negocio.
-*   **Seguridad:** Sistema de autenticación JWT y roles (`Admin`, `User`, `Visitor`).
+*   **Ingredients:** Centralized database of raw materials with costs and suppliers.
+*   **Inventory:** Real-time stock control with low-level alerts.
+*   **Recipes:** Detailed recipe definition with automatic cost calculation.
+*   **Documentation:** Registration and management of important business documents.
+*   **Security:** JWT authentication system and roles (`Admin`, `User`, `Visitor`).
 
-## 🛠️ Stack Tecnológico (Actualizado)
+## 🛠️ Technology Stack (Updated)
 
 *   **Backend:**
     *   **Framework:** .NET 8.0 (C#) - ASP.NET Core API.
-    *   **Base de Datos:** SQLite (para desarrollo ágil) - `pasteleriapp.db`.
-    *   **Acceso a Datos:** Entity Framework Core con Patrón Repositorio.
-    *   **Mapeo de Objetos:** AutoMapper para una comunicación limpia entre capas.
-    *   **Autenticación:** ASP.NET Core Identity con JWT Bearer Tokens.
-    *   **Documentación:** Swagger (OpenAPI) con soporte para XML comments.
+    *   **Database:** SQLite (for agile development) - `pasteleriapp.db`.
+    *   **Data Access:** Entity Framework Core with Repository Pattern.
+    *   **Object Mapping:** AutoMapper for clean communication between layers.
+    *   **Authentication:** ASP.NET Core Identity with JWT Bearer Tokens.
+    *   **Documentation:** Swagger (OpenAPI) with XML comments support.
 
-## 🏗️ Arquitectura y Mejores Prácticas
+## 🏗️ Architecture and Best Practices
 
-*   **Clean Architecture:** Separación clara entre `Data`, `Business`, `Shared` y `API`.
-*   **Patrón Repositorio:** Abstracción total del acceso a datos, facilitando pruebas unitarias.
-*   **DTOs Optimizados:** Uso de objetos de transferencia de datos para evitar redundancias y fugas de entidades al cliente.
-*   **Inyección de Dependencias:** Gestión nativa de servicios y repositorios.
-*   **Respuestas Estandarizadas:** Todas las respuestas de la API siguen el formato `ApiResponse<T>`, garantizando coherencia para el frontend.
+*   **Clean Architecture:** Clear separation between `Data`, `Business`, `Shared`, and `API`.
+*   **Repository Pattern:** Total abstraction of data access, facilitating unit testing.
+*   **Optimized DTOs:** Use of Data Transfer Objects to avoid redundancies and entity leaks to the client.
+*   **Dependency Injection:** Native management of services and repositories.
+*   **Standardized Responses:** All API responses follow the `ApiResponse<T>` format, guaranteeing consistency for the frontend.
 
-## 🔮 Futuras Mejoras y Buenas Prácticas
+## 🔮 Future Improvements and Best Practices
 
-Para llevar este proyecto al siguiente nivel de robustez y profesionalismo, se consideran las siguientes implementaciones:
+To take this project to the next level of robustness and professionalism, the following implementations are considered:
 
-*   **Refresh Tokens:** Implementación de un sistema de rotación de tokens para mejorar la seguridad y la experiencia de usuario sin requerir logins constantes.
-*   **Seguridad Avanzada con Bearer Tokens:** Restricción granular de endpoints sensibles mediante políticas de autorización basadas en roles y claims.
-*   **Validación con FluentValidation:** Desacoplar la lógica de validación de los DTOs para un código más limpio y mantenible.
-*   **Logging Centralizado:** Integración con **Serilog** para persistir logs en archivos, bases de datos o servicios en la nube (Seq, Azure Application Insights).
-*   **Pruebas Automatizadas:** Cobertura de tests unitarios con **xUnit** y tests de integración para asegurar la estabilidad del sistema.
-*   **Rate Limiting:** Protección contra ataques de fuerza bruta y abuso de la API limitando el número de peticiones por cliente.
-*   **Caché de Datos:** Implementación de **Redis** o memoria caché para endpoints de alta demanda como la lista de ingredientes o recetas.
-*   **CI/CD Pipelines:** Automatización de despliegues mediante GitHub Actions para garantizar que cada cambio pase por pruebas y se despliegue de forma segura.
+*   **Refresh Tokens:** Implementation of a token rotation system to improve security and user experience without requiring constant logins.
+*   **Advanced Security with Bearer Tokens:** Granular restriction of sensitive endpoints through authorization policies based on roles and claims.
+*   **Validation with FluentValidation:** Decouple validation logic from DTOs for cleaner and more maintainable code.
+*   **Centralized Logging:** Integration with **Serilog** to persist logs in files, databases, or cloud services (Seq, Azure Application Insights).
+*   **Automated Testing:** Unit test coverage with **xUnit** and integration tests to ensure system stability.
+*   **Rate Limiting:** Protection against brute force attacks and API abuse by limiting the number of requests per client.
+*   **Data Caching:** Implementation of **Redis** or in-memory cache for high-demand endpoints such as the ingredient or recipe list.
+*   **CI/CD Pipelines:** Deployment automation through GitHub Actions to ensure every change passes tests and is deployed safely.
 
-## 💾 Modelo de Datos (Principales Entidades)
+## 💾 Data Model (Main Entities)
 
-*   `User` (Gestionado por ASP.NET Identity)
-*   `Ingredient` (Materias primas)
-*   `InventoryItem` (Stock de ingredientes)
-*   `Recipe` (Ficha técnica de productos)
-*   `RecipeIngredient` (Relación ingredientes-receta)
-*   `Document` (Registro documental)
+*   `User` (Managed by ASP.NET Identity)
+*   `Ingredient` (Raw materials)
+*   `InventoryItem` (Ingredient stock)
+*   `Recipe` (Product technical sheet)
+*   `RecipeIngredient` (Ingredient-recipe relationship)
+*   `Document` (Documentary record)
 
-## 🚀 Empezando con el Backend
+## 🚀 Getting Started with the Backend
 
-1.  **SDK de .NET 8.0:** Asegúrate de tener instalada la última versión de .NET.
-2.  **Configuración:** Revisa `appsettings.json` para las claves JWT y la ruta de la base de datos SQLite.
-3.  **Base de Datos:** El proyecto ya incluye una base de datos SQLite preconfigurada. Si deseas reiniciarla, usa: `dotnet ef database update`.
-60: 4.  **Ejecutar:** `dotnet run` dentro de la carpeta `Pasteleria.Api`.
-5.  **Swagger:** Accede a `http://localhost:5000/swagger` para ver la documentación interactiva.
+1.  **.NET 8.0 SDK:** Make sure you have the latest version of .NET installed.
+2.  **Configuration:** Check `appsettings.json` for JWT keys and the SQLite database path.
+3.  **Database:** The project already includes a preconfigured SQLite database. If you want to reset it, use: `dotnet ef database update`.
+4.  **Run:** `dotnet run` inside the `Pasteleria.Api` folder.
+5.  **Swagger:** Access `http://localhost:5000/swagger` to see the interactive documentation.
 
 ---
 
-## 🧑‍💻 Desarrollado por: **Feith Noir**
+## 🧑‍💻 Developed by: **Feith Noir**
